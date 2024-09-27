@@ -1,0 +1,11 @@
+import cv2
+o = cv2.imread(r"G:\test\images\lena.jpg", cv2.IMREAD_GRAYSCALE)
+r1 = cv2.pyrUp(o)
+r2 = cv2.pyrUp(r1)
+r3 = cv2.pyrUp(r2)
+cv2.imshow("original", o)
+cv2.imshow("PyrUp1", r1)
+cv2.imshow("PyrUp2", r2)
+cv2.imshow("PyrUp3", r3)
+cv2.waitKey()
+cv2.destroyAllWindows()
